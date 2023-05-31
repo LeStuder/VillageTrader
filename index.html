@@ -28,14 +28,14 @@
                 </div>
             </header>
             <main id="play-window">
-                <div id="map">
+                <section id="map">
                     <button type="button" class="btn-town" id="btn-kingsbridge">Kingsbridge</button>
                     <button type="button" class="btn-town" id="btn-oakshire">Oakshire</button>
                     <button type="button" class="btn-town" id="btn-stoneheaven">Stoneheaven</button>
                     <button type="button" class="btn-town" id="btn-willowbrook">Willowbrook</button>
                     <button type="button" class="btn-town" id="btn-meadowcroft">Meadowcroft</button>
-                </div>
-                <div id="menu">
+                </section>
+                <section id="menu">
                     <ul class="menu-list">
                         <li>
                             <button type="button" class="btn-menu" id="btn-inventory">Inventory</button>
@@ -47,11 +47,15 @@
                             <button type="button" class="btn-menu" id="btn-bank">Bank</button>
                         </li>
                     </ul>
-                </div>
-                <div id="dialog"><p>test</p></div>
-                <div id="proceed">
+
+                    <dialog id="modal-inventory">Test Inventory</dialog>
+                    <dialog id="modal-trade">Test Trade</dialog>
+                    <dialog id="modal-bank">Test Bank</dialog>
+                </section>
+                <section id="dialog"><p>test</p></section>
+                <section id="proceed">
                     <button id="btn-next-day" type="button">Next Day</button>
-                </div>
+                </section>
             </main>
         </div>
         <script src="main.js"></script>
