@@ -36,19 +36,16 @@
                     <button type="button" class="btn-town" id="btn-meadowcroft">Meadowcroft</button>
                 </section>
                 <section id="menu">
-                    <ul class="menu-list">
-                        <li>
-                            <button type="button" class="btn-menu" id="btn-inventory">Inventory</button>
-                        </li>
-                        <li>
-                            <button type="button" class="btn-menu" id="btn-trade">Trade</button>
-                        </li>
-                        <li>
-                            <button type="button" class="btn-menu" id="btn-bank">Bank</button>
-                        </li>
-                    </ul>
+                    <button type="button" class="btn-menu" id="btn-inventory">Inventory</button>
+                    <button type="button" class="btn-menu" id="btn-trade">Trade</button>
+                    <button type="button" class="btn-menu" id="btn-bank">Bank</button>
 
-                    <dialog id="modal-inventory">Test Inventory</dialog>
+                    <dialog id="modal-inventory">
+                        <form id="input-form">
+                            <div id="inventory-container"></div>
+                            <button id="btn-inventory-cancel">Cancel</button>
+                        </form>
+                    </dialog>
                     <dialog id="modal-trade">Test Trade</dialog>
                     <dialog id="modal-bank">Test Bank</dialog>
                 </section>

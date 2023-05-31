@@ -96,6 +96,10 @@ header {
     border-left: solid 2px var(--color-muddy);
     border-radius: 0 5px 0 0;
     background-color: var(--color-beige);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 #dialog {
@@ -114,6 +118,10 @@ header {
     border-left: solid 2px var(--color-muddy);
     border-radius: 0 0 5px 0;
     background-color: var(--color-beige);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .btn-town {
@@ -149,20 +157,57 @@ header {
     left: 50%;
 }
 
-.menu-list {
-    list-style-type: none;
-}
-
-.btn-menu {
+.btn-menu,
+#btn-next-day {
     display: block;
-    margin-top: 5vh;
+    height: 100%;
+    margin: 1vh;
+    margin-bottom: 0;
     background-color: var(--color-muddy);
     border: solid 1px var(--color-dark);
+    border-radius: 5px;
     padding: 5px;
+    font-family: "MedievalSharp", "Modern Antiqua", cursive;
+    text-shadow: 0.5px 0.5px 2px #252525;
+    color: var(--color-dark);
+    font-size: 4vh;
 }
 
-#proceed {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* .btn-menu:last-of-type {
+    margin-bottom: 1vh;
+} */
+
+#btn-next-day {
+    margin: 1vh;
+}
+
+#modal-inventory {
+    width: 30%;
+}
+
+.inventoryObj {
+    display: grid;
+    grid-template-columns: 2fr 3fr 3fr;
+    margin-bottom: 5px;
+}
+
+.inventoryObj > * {
+    margin: 0;
+}
+
+.inventoryInInventory {
+    grid-column-start: 1;
+}
+
+.inventoryUnit {
+    grid-column-start: 2;
+}
+
+.inventoryName {
+    text-align: right;
+    grid-column-start: 3;
+}
+
+.inventoryName::before {
+    content: " ";
 }
