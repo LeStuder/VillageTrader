@@ -4,9 +4,56 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&family=MedievalSharp&family=Modern+Antiqua&display=swap"
+            rel="stylesheet"
+        />
+
         <title>Village Trader</title>
     </head>
     <body>
+        <div id="flex-container">
+            <header>
+                <div id="title">
+                    <h1>Village</h1>
+                    <h1>Trader</h1>
+                </div>
+                <div id="village-name">
+                    <p>Kingsbridge</p>
+                </div>
+                <div id="available-gold">
+                    <p>560</p>
+                </div>
+            </header>
+            <main id="play-window">
+                <div id="map">
+                    <button type="button" class="btn-town" id="btn-kingsbridge">Kingsbridge</button>
+                    <button type="button" class="btn-town" id="btn-oakshire">Oakshire</button>
+                    <button type="button" class="btn-town" id="btn-stoneheaven">Stoneheaven</button>
+                    <button type="button" class="btn-town" id="btn-willowbrook">Willowbrook</button>
+                    <button type="button" class="btn-town" id="btn-meadowcroft">Meadowcroft</button>
+                </div>
+                <div id="menu">
+                    <ul class="menu-list">
+                        <li>
+                            <button type="button" class="btn-menu" id="btn-inventory">Inventory</button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn-menu" id="btn-trade">Trade</button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn-menu" id="btn-bank">Bank</button>
+                        </li>
+                    </ul>
+                </div>
+                <div id="dialog"><p>test</p></div>
+                <div id="proceed">
+                    <button id="btn-next-day" type="button">Next Day</button>
+                </div>
+            </main>
+        </div>
         <script src="main.js"></script>
     </body>
 </html>

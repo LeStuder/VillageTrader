@@ -1,0 +1,168 @@
+:root {
+    --color-beige: #ead5bd;
+    --color-dark: #49423a;
+    --color-muddy: #b38a5b;
+    --color-gold: #e5b175;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "MedievalSharp", "Modern Antiqua", cursive;
+}
+
+#flex-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    flex: 0 1 auto;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    border-bottom: solid 1px #93724a;
+    background-color: var(--color-muddy);
+    color: var(--color-dark);
+    font-size: 4vh;
+    text-shadow: 0.5px 0.5px 2px #252525;
+}
+
+#title {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#title > h1 {
+    font-size: 1.5em;
+    margin: 0;
+    margin-left: 5vw;
+}
+
+#title > h1:first-child {
+    margin-top: 1vh;
+}
+
+#village-name,
+#available-gold {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+}
+
+#available-gold > p::before {
+    content: "$";
+    color: goldenrod;
+}
+
+#play-window {
+    position: relative;
+    flex: 1 1 auto;
+    align-self: center;
+    width: 70vw;
+    height: 100%;
+    margin: 5vh 0;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 3fr 1fr;
+    grid-template-areas:
+        "map menu"
+        "dialog proceed";
+}
+
+#map {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-area: map;
+    border-top: solid 2px var(--color-muddy);
+    border-left: solid 2px var(--color-muddy);
+    border-radius: 5px 0 0 0;
+    background-color: var(--color-gold);
+}
+
+#menu {
+    grid-area: menu;
+    border-top: solid 2px var(--color-muddy);
+    border-right: solid 2px var(--color-muddy);
+    border-left: solid 2px var(--color-muddy);
+    border-radius: 0 5px 0 0;
+    background-color: var(--color-beige);
+}
+
+#dialog {
+    grid-area: dialog;
+    border-top: solid 2px var(--color-muddy);
+    border-bottom: solid 2px var(--color-muddy);
+    border-left: solid 2px var(--color-muddy);
+    border-radius: 0 0 0 5px;
+    background-color: var(--color-beige);
+}
+
+#proceed {
+    grid-area: proceed;
+    border-bottom: solid 2px var(--color-muddy);
+    border-right: solid 2px var(--color-muddy);
+    border-left: solid 2px var(--color-muddy);
+    border-radius: 0 0 5px 0;
+    background-color: var(--color-beige);
+}
+
+.btn-town {
+    position: relative;
+    height: 10vh;
+    width: 10vh;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    border-radius: 50%;
+    border: solid 1px var(--color-dark);
+    padding: 0;
+    text-align: center;
+}
+
+#btn-kingsbridge {
+    top: 20%;
+    left: 30%;
+}
+#btn-oakshire {
+    top: 10%;
+    left: 60%;
+}
+#btn-stoneheaven {
+    top: 60%;
+    left: 10%;
+}
+#btn-willowbrook {
+    top: 70%;
+    left: 80%;
+}
+#btn-meadowcroft {
+    top: 70%;
+    left: 50%;
+}
+
+.menu-list {
+    list-style-type: none;
+}
+
+.btn-menu {
+    display: block;
+    margin-top: 5vh;
+    background-color: var(--color-muddy);
+    border: solid 1px var(--color-dark);
+    padding: 5px;
+}
+
+#proceed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
